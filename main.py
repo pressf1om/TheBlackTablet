@@ -1,2 +1,1 @@
-print('Hello world')
-
+goida = 1488
