@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-    <main>
-         <a href="{% url 'catalog:index' %}" class="brand">TheBlackTablet</a>
-        <a href="{% url 'catalog:catalog' %}" class="brand">Популярные товары</a>
-        Блог о кофе
-         Новинки недели
-          <a href="{% url 'catalog:reviews' %}" class="brand">Отзывы</a>
-
-    </main>
+<div class="wrapper">
+        <div class="hero container">
+            <div class="hero--info">
+                <h1>О нас</h1>
+                <p>В Black Tablet мы верим, что кофе - это больше, чем просто напиток, это опыт. Наши увлеченные бариста стремятся создать идеальную чашку для любого вкуса, используя только лучшие зерна со всего мира. Расположенное в самом центре города, наше кафе предлагает теплую и уютную обстановку, в которой можно расслабиться, пообщаться с друзьями или просто насладиться тишиной. Откройте для себя искусство приготовления кофе в The Black Tablet.</p>
+                <button class="btn">Меню</button>
+            </div>
+            <img src="Baby%20Invoker.svg" alt="">
+        </div>
+    </div>
 {% endblock %}
