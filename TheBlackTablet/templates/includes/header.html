@@ -1,0 +1,15 @@
+<header class="site-header">
+  <title> Интернет-магазин кофе TheBlackTablet</title>
+  <div class="wrapper site-header__wrapper">
+    <a href="{% url 'catalog:index' %}" class="brand">TheBlackTablet</a>
+    <nav class="nav">
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">Купить</a></li>
+        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">О нас</a></li>
+        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">Блог о кофе</a></li>
+        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">Связаться с нами</a></li>
+        <li class="nav__item"><a href="{% url 'catalog:reviews' %}">Отзывы</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
