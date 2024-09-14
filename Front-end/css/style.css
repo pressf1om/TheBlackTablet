@@ -11,3 +11,7 @@ header{
   background-color: #fcebb6;
   color: #5E412FFF;
 }
+
+header nav ul li a{
+  color: #5E412FFF;
+}
