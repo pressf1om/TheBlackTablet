@@ -17,8 +17,81 @@ body {
 header{
     width: 100%;
     box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
-    padding: 15px 0;
+    padding: 45px 150px;
     margin-bottom: 30px;
     position: relative;
-    text-align: center;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 150px;
+    display: inline-block;
+}
+
+
+header nav{
+    float: right;
+    width: 50%;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 150%;
+    z-index: 2;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+    font-size: larger;
+    transition: all 0.2s;
+}
+
+header nav ul li.btn a{
+    background: #f04451;
+    padding: 13px 15px;
+    border-radius: 15px;
+    transition: all 0.25s;
+    border: none;
+}
+
+header nav ul li.btn a:hover{
+    background: #bf13e6;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+.market {
+    margin-right: 20px;
+}
+.bx-menu {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .bx-menu {
+        display: block;
+    }
+    .main {
+        justify-content: flex-end;
+    }
 }
