@@ -6,4 +6,5 @@ document.getElementById('menu-icon').addEventListener('click', function()
     } else {
         menu.style.display = 'flex';
     }
+
 });
