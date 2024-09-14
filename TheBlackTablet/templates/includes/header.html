@@ -1,15 +1,18 @@
-<header class="site-header">
-  <title> Интернет-магазин кофе TheBlackTablet</title>
-  <div class="wrapper site-header__wrapper">
-    <a href="{% url 'catalog:index' %}" class="brand">TheBlackTablet</a>
-    <nav class="nav">
-      <ul class="nav__wrapper">
-        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">Купить</a></li>
-        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">О нас</a></li>
-        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">Блог о кофе</a></li>
-        <li class="nav__item"><a href="{% url 'catalog:catalog' %}">Связаться с нами</a></li>
-        <li class="nav__item"><a href="{% url 'catalog:reviews' %}">Отзывы</a></li>
-      </ul>
+{% load static %}
+<header class="container">
+    <img src="img/logo.png" alt="">
+    <span class="logo"><a href="{% url 'catalog:index' %}"> The Black Tablet</a></span>
+    <nav>
+        <ul id="menu">
+            <li><a href="{% url 'catalog:index' %}" class="active">Главная</a></li>
+            <li><a href="{% url 'catalog:catalog' %}">О нас</a></li>
+            <li><a href="{% url 'catalog:catalog' %}">Меню</a></li>
+            <li><a href="{% url 'catalog:catalog' %}">Новости</a></li>
+            <li><a href="{% url 'catalog:catalog' %}">Контакты</a></li>
+        </ul>
+        <div class="main">
+            <a href="{% url 'catalog:catalog' %}" class="market"><i class="ri-market-fill"></i> Заказать онлайн</a>
+            <div class="bx-menu" id="menu-icon">&#9776;</div>
+        </div>
     </nav>
-  </div>
 </header>
