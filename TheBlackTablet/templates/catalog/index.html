@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+         <a href="{% url 'catalog:index' %}" class="brand">TheBlackTablet</a>
+        <a href="{% url 'catalog:catalog' %}" class="brand">Популярные товары</a>
+        Блог о кофе
+         Новинки недели
+          <a href="{% url 'catalog:reviews' %}" class="brand">Отзывы</a>
+
+    </main>
+{% endblock %}
