@@ -15,3 +15,13 @@ def reviews(request):
     context = {
     }
     return render(request, 'catalog/reviews.html', context)
+
+def coffee(request):
+    context = {
+    }
+    return render(request, 'catalog/coffee.html', context)
+
+def contact(request):
+    context = {
+    }
+    return render(request, 'catalog/contact.html', context)

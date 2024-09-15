@@ -1,14 +1,14 @@
 {% load static %}
 <header class="container">
     <img src="img/logo.png" alt="">
-    <span class="logo"><a href="{% url 'catalog:index' %}"> The Black Tablet</a></span>
+    <span class="logo">The Black Tablet</span>
     <nav>
         <ul id="menu">
             <li><a href="{% url 'catalog:index' %}" class="active">Главная</a></li>
-            <li><a href="{% url 'catalog:catalog' %}">О нас</a></li>
-            <li><a href="{% url 'catalog:catalog' %}">Меню</a></li>
-            <li><a href="{% url 'catalog:catalog' %}">Новости</a></li>
-            <li><a href="{% url 'catalog:catalog' %}">Контакты</a></li>
+            <li><a href="{% url 'about:company' %}">О нас</a></li>
+            <li><a href="{% url 'catalog:catalog' %}">Купить</a></li>
+            <li><a href="{% url 'catalog:coffee' %}">Блог о кофе</a></li>
+            <li><a href="{% url 'catalog:contact' %}">Контакты</a></li>
         </ul>
         <div class="main">
             <a href="{% url 'catalog:catalog' %}" class="market"><i class="ri-market-fill"></i> Заказать онлайн</a>
