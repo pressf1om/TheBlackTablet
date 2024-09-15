@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Catalog
 
 def index(request):
     context = {
@@ -7,7 +8,9 @@ def index(request):
     return render(request, 'catalog/index.html', context)
 
 def catalog(request):
+    items = Catalog.objects.all()
     context = {
+        'items': items
     }
     return render(request, 'catalog/catalog.html', context)
 

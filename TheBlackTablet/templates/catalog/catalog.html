@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-Магазин кофе
+    {% for item in items %}
+    <li>{{ item.name }} - {{ item.description }} - Цена: {{ item.price }} - В наличии: {{ item.remain }}</li>
+    {% endfor %}
 {% endblock %}
