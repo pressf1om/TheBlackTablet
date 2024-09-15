@@ -9,47 +9,34 @@
 
     <title>The Black Tablet: Где Кофе встречается с Магией</title>
 
-    <link rel="stylesheet" href="/TheBlackTablet/static/css/MainPage.css">
-    <link rel="stylesheet" href="/TheBlackTablet/static/css/style.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/TheBlackTablet/TheBlackTablet/static/css/MainPage.css">
+    <link rel="stylesheet" href="/TheBlackTablet/TheBlackTablet/static/css/style.css">
 
 </head>
 <body>
-    <header class="container">
-        <img src="img/logo.png" alt="">
-        <span class="logo">The Black Tablet</span>
-        <nav>
-            <ul id="menu">
-                <li><a href="#" class="active">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Магазин</a></li>
-            </ul>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-left" style="position: relative; left: -100px;">
+                <ul>
+                    <li><a href="#" style="position: relative; left: -100px;">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </div>
+            <div class="logo">The Black Tablet</div>
+            <div class="nav-right" style="position: relative; left: 100px;">
+                <ul>
+                    <li><a href="#">Рецепты</a></li>
+                    <li><a href="#" style="position: relative; left: 100px;">Контакты</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
 
-    <nav class="side-menu" id="side-menu">
-        <button class="close-btn" id="close-btn">&times;</button>
-        <ul class="nav-list">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Меню</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Магазин</a></li>
-        </ul>
-    </nav>
-
-    <div class="cards">
-        <div class="mainCard">
-            <h1>О нас</h1>
-            <p>В Black Tablet мы верим, что кофе - это больше, чем просто напиток, это опыт. Наши увлеченные бариста стремятся создать идеальную чашку для любого вкуса, используя только лучшие зерна со всего мира. Расположенное в самом центре города, наше кафе предлагает теплую и уютную обстановку, в которой можно расслабиться, пообщаться с друзьями или просто насладиться тишиной. Откройте для себя искусство приготовления кофе в The Black Tablet.</p>
-            <button class="btn">Заказать онлайн</button>
-        </div>
-        <img src="img/Baby%20Invoker.svg" alt="">
+    <div class="our-card" id="card1">
+        <h1>О Нас</h1>
+        <p>В Black Tablet мы верим, что кофе - это больше, чем просто напиток, это опыт. Наши увлеченные бариста стремятся создать идеальную чашку для любого вкуса, используя только лучшие зерна со всего мира. Расположенное в самом центре города, наше кафе предлагает теплую и уютную обстановку, в которой можно расслабиться, пообщаться с друзьями или просто насладиться тишиной. Откройте для себя искусство приготовления кофе в The Black Tablet.</p>
+        <button class="btn">Магазин</button>
     </div>
-<script src="MainPage.js"></script>
+
 </body>
 </html>

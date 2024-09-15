@@ -13,10 +13,45 @@ header{
   color: #5E412FFF;
 }
 
-header nav ul li a{
-  color: #5E412FFF;
+.container{
+  color: #5e412f;
 }
 
-nav ul{
-  background: #fcebb6;
+.nav-left ul li a,
+.nav-right ul li a{
+  color: #5e412f;
 }
+
+.nav-left ul li a::after,
+.nav-right ul li a::after {
+  background: #68dcff;
+}
+.nav-left ul li a:hover {
+  color: #68dcff; /* Цвет текста при наведении */
+}
+
+.nav-right ul li a:hover {
+  color: #68dcff;
+}
+
+.our-card{
+  box-shadow: 0 8px 120px rgb(44, 33, 23);
+  color: #fcebb6;
+}
+
+.our-card .btn {
+  background: #fcebb6;
+  color: #5e412f;
+}
+
+.our-card .btn:hover {
+  background: #68dcff;
+  color: #fcebb6;
+}
+
+
+#card1 {
+  background-color: #5e412f; /* Light blue */
+}
+
+
