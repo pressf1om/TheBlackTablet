@@ -9,6 +9,7 @@ html {
 
 
 header{
+  box-shadow: 0 8px 120px rgb(44, 33, 23);
   background-color: #fcebb6;
   color: #5E412FFF;
 }
