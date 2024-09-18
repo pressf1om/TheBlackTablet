@@ -37,6 +37,7 @@ header{
 .our-card{
   box-shadow: 0 8px 120px rgb(44, 33, 23);
   color: #fcebb6;
+  background-color: #5e412f;
 }
 
 .our-card .btn {
@@ -51,6 +52,28 @@ header{
 
 
 #card1 {
+  background-color: #5e412f; /* Light blue */
+}
+
+
+.coffee-card-text{
+  box-shadow: 0 8px 120px rgb(44, 33, 23);
+  color: #5e412f;
+  background-color: #fcebb6;
+}
+
+.coffee-card-text .btn {
+  background: #5e412f;
+  color: #fcebb6;
+}
+
+.coffee-card-text .btn:hover {
+  background: #68dcff;
+  color: #fcebb6;
+}
+
+
+#coffee{
   background-color: #5e412f; /* Light blue */
 }
 
